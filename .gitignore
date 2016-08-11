@@ -1,9 +1,18 @@
+#Scala
+target
 *.class
 *.log
 
+#IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
 # sbt specific
-.cache
-.history
+.cache/
+.history/
 .lib/
 dist/*
 target/
@@ -12,6 +21,5 @@ src_managed/
 project/boot/
 project/plugins/project/
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
+#OSX
+.DS_Store
