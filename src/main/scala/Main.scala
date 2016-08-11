@@ -5,7 +5,6 @@ class Main extends PApplet {
 
   override def setup: Unit = {
     simulationMap = MapBuilder.createMap(System.getProperty("user.dir") + "/maps/map.txt")
-
     println(simulationMap)
   }
   
@@ -14,8 +13,8 @@ class Main extends PApplet {
     size(800, 800)
   }
 
-
   override def draw: Unit = {
+    simulationMap.draw(this)
   }
 }
 
