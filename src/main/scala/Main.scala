@@ -1,10 +1,12 @@
 import processing.core.PApplet
 
 class Main extends PApplet {
+  var simulationMap: SimulationMap = _
 
   override def setup: Unit = {
-    val createMap: SimulationMap = MapBuilder.createMap(System.getProperty("user.dir") + "/maps/map.txt")
-    println(createMap)
+    simulationMap = MapBuilder.createMap(System.getProperty("user.dir") + "/maps/map.txt")
+
+    println(simulationMap)
   }
   
   
